@@ -274,7 +274,8 @@ RED.start().then(function() {
             }
             process.exit(1);
         });
-        server.listen(settings.uiPort,settings.uiHost,function() {
+        server.listen(settings.uiPort,'0.0.0.0',function() {
+        //server.listen(settings.uiPort,settings.uiHost,function() {
             if (settings.httpAdminRoot === false) {
                 RED.log.info(RED.log._("server.admin-ui-disabled"));
             }
