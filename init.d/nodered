@@ -3,7 +3,7 @@
 START=99
 
 USE_PROCD=1
-BIN="/usr/bin/node --max-old-space-size=128 /usr/bin/onion-node-red/node_modules/node-red/red.js --userDir /root/.node-red"
+BIN="/usr/bin/node --max-old-space-size=128 /usr/lib/node_modules/node-red/red.js --userDir /root/.node-red"
 OPT=""
 
 start_service() {
